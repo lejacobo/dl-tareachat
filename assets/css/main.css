@@ -1,0 +1,14 @@
+.main {
+	padding-top: 70px;
+}
+.bottom {    
+    position: fixed;
+    bottom: 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
