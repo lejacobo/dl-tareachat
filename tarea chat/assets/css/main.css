@@ -1,0 +1,26 @@
+html,body{
+    height: 100%;
+}
+
+.main {
+	padding-top: 70px;
+}
+/*.bottom {    
+    position: fixed;
+    display: block;
+    bottom: 0;*/
+
+}
+
+.flex {
+  display: flex;
+  flex-direction:column-reverse;
+  align-items: flex-end;
+/* no pude :( */
+
+}
+.block {
+	background-color:white;
+	border-top: 1px;
+	border-color: gray;
+}

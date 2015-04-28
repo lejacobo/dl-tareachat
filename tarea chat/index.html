@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Chatcito</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- 	me banearon de bootswatch por refrescar mucho mi html :(	<link rel="stylesheet" href="http://bootswatch.com/cerulean/bootstrap.min.css"> -->
+		<!-- mi css -->
+		<link rel="stylesheet" href="assets/css/main.css"> 
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- navbar -->
+
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<a class="navbar-brand">Chatcito</a>
+			<ul class="nav navbar-nav navbar-right">
+		        <li><a href="javascript:void(0)" onclick="clearall();" title="ojo con esto se borra todo"> <span class="glyphicon glyphicon glyphicon-remove" aria-hidden"true"> </span> Limpiar Mensajes</a></li>
+        	</ul>
+		</nav>
+
+		<div class="container main">
+			<div class="row flex">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-centered col-xs-offset-3">
+
+				<main id="areademensajes">
+					
+				</style>
+				<!-- acá van los posts -->
+				</main>
+
+				</div>
+			</div>
+		</div>
+		<div class="navbar-fixed-bottom block">
+				<section id="chatea" class=" col-xs-6 col-sm-6 col-md-6 col-lg-6 col-centered col-xs-offset-3">
+				<p> <span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Ingresa tu mensaje y presiona [enter] para enviarlo</p>
+				<input id="messagetext" type="text" class="form-control" placeholder="ingresa tu mensajito ti" onkeypress="return presionaenter()"/>
+				<button class="btn btn-danger" onclick="Message.crear()" style="display:inline-block;">Guardar</button> 	
+			</section>
+		</div>
+
+
+
+
+
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
